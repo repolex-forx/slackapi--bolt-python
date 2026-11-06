@@ -8,7 +8,7 @@
     {
       "@id": "https://repolex.ai/r/slackapi/bolt-python/commit/efc36b1f381854268276a9cb384c22cfe1f63072",
       "git:hexsha": "efc36b1f381854268276a9cb384c22cfe1f63072",
-      "repolex:parseStatus": "metadata_complete"
+      "repolex:parseStatus": "ast_complete"
     },
     {
       "@id": "https://repolex.ai/r/slackapi/bolt-python/commit/95f08061f15fe71134fd1960523cfdf7ffae38b0",
