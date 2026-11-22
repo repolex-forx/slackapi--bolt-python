@@ -1,0 +1,144 @@
+[2026-11-22T07:09:17Z] === ENRICH ITERATION 1 START | repo=slackapi/bolt-python sha=c64d69d2 ===
+[2026-11-22T07:09:17Z] [iter=1] PHASE START: enrich repo=slackapi/bolt-python sha=c64d69d2 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/c64d69d2-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/c64d69d2b64801602c849aa56e0ba2d4161e1f98.nq.gz
+[2026-11-22T07:09:19Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=78 MB
+[2026-11-22T07:09:40Z] [iter=1] AST store loaded triples=2767959 load_secs=19 mem_mb=934 MB
+[2026-11-22T07:09:40Z] [iter=1] Step 2: Finding LSP targets mem_mb=934 MB
+[2026-11-22T07:09:45Z] [iter=1] LSP targets found call_sites=14376 imports=3227 extends=167 implements=0 secs=5
+[2026-11-22T07:09:49Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=934 MB
+[2026-11-22T07:10:00Z] [iter=1] Position index built positions=193255 nodes_with_types=253992 secs=11 mem_mb=934 MB
+[2026-11-22T07:10:00Z] [iter=1] Step 3: Starting LSP resolution mem_mb=934 MB already_completed_types=[] already_completed_files=0
+[2026-11-22T07:10:00Z] [iter=1] Resolving target type target_type=call_site count=14376
+[2026-11-22T07:10:01Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=0.7 files_done=0 resolved=0 errors=0 current=tests/adapter_tests/socket_mode/mock_web_api_server.py
+[2026-11-22T07:11:56Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=2.7 files_done=2 resolved=222 errors=0 current=tests/scenario_tests_async/test_authorize.py
+[2026-11-22T07:12:31Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=3.2 files_done=3 resolved=282 errors=0 current=tests/scenario_tests/test_events.py
+[2026-11-22T07:13:58Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=4.7 files_done=4 resolved=486 errors=0 current=examples/assistants/app.py
+[2026-11-22T07:14:33Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=5.3 files_done=7 resolved=544 errors=0 current=tests/scenario_tests/test_dialogs.py
+[2026-11-22T07:16:22Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=7.1 files_done=8 resolved=715 errors=0 current=tests/slack_bolt/listener_matcher/test_builtins.py
+[2026-11-22T07:17:19Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=8.0 files_done=11 resolved=832 errors=0 current=slack_bolt/middleware/assistant/async_assistant.py
+[2026-11-22T07:18:07Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=8.8 files_done=13 resolved=1052 errors=0 current=tests/slack_bolt_async/oauth/test_async_oauth_flow_sqlite3.py
+[2026-11-22T07:19:11Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=9.9 files_done=15 resolved=1150 errors=0 current=tests/adapter_tests/cherrypy/test_cherrypy_oauth.py
+[2026-11-22T07:20:15Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=11.0 files_done=18 resolved=1307 errors=0 current=tests/adapter_tests_async/test_tornado.py
+[2026-11-22T07:21:18Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=12.0 files_done=20 resolved=1417 errors=0 current=tests/slack_bolt_async/middleware/attaching_conversation_kwargs/test_async_attaching_conversation_kwargs.py
+[2026-11-22T07:23:10Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=13.9 files_done=22 resolved=1660 errors=0 current=tests/scenario_tests/test_events_shared_channels.py
+[2026-11-22T07:24:02Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=14.8 files_done=23 resolved=1786 errors=0 current=examples/asgi/async_app.py
+[2026-11-22T07:25:49Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=16.5 files_done=25 resolved=2058 errors=0 current=slack_bolt/adapter/sanic/async_handler.py
+[2026-11-22T07:26:21Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=17.1 files_done=30 resolved=2170 errors=0 current=tests/utils.py
+[2026-11-22T07:27:01Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=17.7 files_done=32 resolved=2250 errors=0 current=tests/scenario_tests/test_events_socket_mode.py
+[2026-11-22T07:27:45Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=18.5 files_done=33 resolved=2320 errors=0 current=tests/adapter_tests/asgi/test_asgi_http.py
+[2026-11-22T07:28:18Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=19.0 files_done=34 resolved=2405 errors=0 current=tests/scenario_tests/test_app.py
+[2026-11-22T07:29:01Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=19.7 files_done=35 resolved=2483 errors=0 current=slack_bolt/adapter/socket_mode/websockets/__init__.py
+[2026-11-22T07:29:55Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=20.6 files_done=37 resolved=2615 errors=0 current=tests/scenario_tests/test_error_handler.py
+[2026-11-22T07:30:34Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=21.3 files_done=38 resolved=2689 errors=0 current=tests/scenario_tests_async/test_block_actions.py
+[2026-11-22T07:31:21Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=22.1 files_done=39 resolved=2766 errors=0 current=examples/workflow_steps/steps_from_apps_decorator.py
+[2026-11-22T07:31:56Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=22.7 files_done=41 resolved=2842 errors=0 current=tests/mock_web_api_server/mock_handler.py
+[2026-11-22T07:33:12Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=23.9 files_done=44 resolved=3057 errors=0 current=slack_bolt/adapter/bottle/handler.py
+[2026-11-22T07:33:51Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=24.6 files_done=47 resolved=3128 errors=0 current=tests/scenario_tests/test_function.py
+[2026-11-22T07:34:38Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=25.3 files_done=48 resolved=3207 errors=0 current=tests/scenario_tests_async/test_app_decorators.py
+[2026-11-22T07:35:25Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=26.1 files_done=50 resolved=3293 errors=0 current=tests/scenario_tests_async/test_app_actor_user_token.py
+[2026-11-22T07:35:58Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=26.7 files_done=52 resolved=3347 errors=0 current=slack_bolt/adapter/socket_mode/base_handler.py
+[2026-11-22T07:36:28Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=27.2 files_done=54 resolved=3424 errors=0 current=tests/scenario_tests_async/test_workflow_steps_decorator_with_args.py
+[2026-11-22T07:37:10Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=27.9 files_done=55 resolved=3528 errors=0 current=tests/adapter_tests/pyramid/test_pyramid.py
+[2026-11-22T07:38:02Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=28.8 files_done=57 resolved=3642 errors=0 current=tests/slack_bolt_async/context/test_async_say_stream.py
+[2026-11-22T07:38:46Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=29.5 files_done=59 resolved=3717 errors=0 current=slack_bolt/adapter/aws_lambda/chalice_handler.py
+[2026-11-22T07:39:18Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=30.0 files_done=62 resolved=3773 errors=0 current=tests/adapter_tests_async/test_async_falcon.py
+[2026-11-22T07:40:05Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=30.8 files_done=64 resolved=3890 errors=0 current=slack_bolt/context/ack/internals.py
+[2026-11-22T07:41:18Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=32.0 files_done=66 resolved=4078 errors=0 current=slack_bolt/lazy_listener/async_runner.py
+[2026-11-22T07:42:20Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=33.0 files_done=72 resolved=4215 errors=0 current=tests/scenario_tests_async/test_slash_command.py
+[2026-11-22T07:42:54Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=33.6 files_done=75 resolved=4274 errors=0 current=examples/tornado/oauth_app.py
+[2026-11-22T07:44:02Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=34.7 files_done=81 resolved=4407 errors=0 current=tests/scenario_tests/test_events_token_revocations.py
+[2026-11-22T07:45:09Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=35.9 files_done=83 resolved=4523 errors=0 current=slack_bolt/middleware/authorization/async_multi_teams_authorization.py
+[2026-11-22T07:46:10Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=36.9 files_done=85 resolved=4623 errors=0 current=examples/sanic/async_app.py
+[2026-11-22T07:47:04Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=37.8 files_done=87 resolved=4762 errors=0 current=tests/scenario_tests/test_view_submission.py
+[2026-11-22T07:47:42Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=38.4 files_done=88 resolved=4827 errors=0 current=tests/scenario_tests_async/test_error_handler.py
+[2026-11-22T07:48:20Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=39.1 files_done=89 resolved=4901 errors=0 current=tests/scenario_tests_async/test_events_token_revocations.py
+[2026-11-22T07:49:28Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=40.2 files_done=92 resolved=5018 errors=0 current=tests/slack_bolt_async/context/test_async_respond.py
+[2026-11-22T07:50:05Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=40.8 files_done=94 resolved=5103 errors=0 current=tests/scenario_tests_async/test_app_installation_store.py
+[2026-11-22T07:50:53Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=41.6 files_done=96 resolved=5195 errors=0 current=tests/scenario_tests/test_web_client_customization.py
+[2026-11-22T07:51:24Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=42.1 files_done=98 resolved=5255 errors=0 current=tests/scenario_tests_async/test_message.py
+[2026-11-22T07:52:20Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=43.1 files_done=99 resolved=5349 errors=0 current=tests/adapter_tests/starlette/test_fastapi.py
+[2026-11-22T07:53:25Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=44.1 files_done=101 resolved=5473 errors=0 current=slack_bolt/response/response.py
+[2026-11-22T07:54:14Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=44.9 files_done=104 resolved=5569 errors=0 current=slack_bolt/context/base_context.py
+[2026-11-22T07:54:51Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=45.6 files_done=106 resolved=5650 errors=0 current=tests/adapter_tests/bottle/test_bottle.py
+[2026-11-22T07:55:53Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=46.6 files_done=109 resolved=5769 errors=0 current=slack_bolt/listener_matcher/async_builtins.py
+[2026-11-22T07:56:42Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=47.4 files_done=115 resolved=5875 errors=0 current=slack_bolt/listener/thread_runner.py
+[2026-11-22T07:57:29Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=48.2 files_done=118 resolved=5985 errors=0 current=tests/scenario_tests_async/test_lazy.py
+[2026-11-22T07:58:09Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=48.9 files_done=120 resolved=6056 errors=0 current=tests/scenario_tests_async/test_events_shared_channels.py
+[2026-11-22T07:59:17Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=50.0 files_done=121 resolved=6205 errors=0 current=slack_bolt/adapter/wsgi/handler.py
+[2026-11-22T08:00:13Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=50.9 files_done=123 resolved=6288 errors=0 current=tests/slack_bolt/context/test_respond_internals.py
+[2026-11-22T08:01:02Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=51.7 files_done=126 resolved=6381 errors=0 current=slack_bolt/middleware/message_listener_matches/message_listener_matches.py
+[2026-11-22T08:01:56Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=52.7 files_done=129 resolved=6474 errors=0 current=tests/adapter_tests/starlette/test_starlette.py
+[2026-11-22T08:02:27Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=53.2 files_done=131 resolved=6540 errors=0 current=slack_bolt/workflows/step/async_step_middleware.py
+[2026-11-22T08:03:10Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=53.9 files_done=133 resolved=6608 errors=0 current=tests/adapter_tests_async/test_async_asgi.py
+[2026-11-22T08:04:27Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=55.2 files_done=135 resolved=6774 errors=0 current=tests/scenario_tests/test_block_actions_respond.py
+[2026-11-22T08:06:03Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=56.8 files_done=138 resolved=6946 errors=0 current=slack_bolt/adapter/starlette/async_handler.py
+[2026-11-22T08:07:06Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=57.8 files_done=140 resolved=7057 errors=0 current=tests/scenario_tests/test_block_actions.py
+[2026-11-22T08:07:52Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=58.6 files_done=141 resolved=7128 errors=0 current=tests/adapter_tests/socket_mode/mock_socket_mode_server.py
+[2026-11-22T08:09:47Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=60.5 files_done=144 resolved=7419 errors=0 current=slack_bolt/context/assistant/assistant_utilities.py
+[2026-11-22T08:10:18Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=61.0 files_done=147 resolved=7493 errors=0 current=slack_bolt/listener/asyncio_runner.py
+[2026-11-22T08:10:57Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=61.7 files_done=149 resolved=7565 errors=0 current=tests/scenario_tests_async/test_listener_middleware.py
+[2026-11-22T08:11:42Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=62.4 files_done=154 resolved=7667 errors=0 current=tests/scenario_tests/test_workflow_steps_decorator_with_args.py
+[2026-11-22T08:12:25Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=63.1 files_done=155 resolved=7771 errors=0 current=tests/adapter_tests/django/test_django.py
+[2026-11-22T08:12:58Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=63.7 files_done=156 resolved=7845 errors=0 current=slack_bolt/authorization/authorize.py
+[2026-11-22T08:13:40Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=64.4 files_done=161 resolved=7946 errors=0 current=tests/adapter_tests/flask/test_flask.py
+[2026-11-22T08:14:34Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=65.3 files_done=164 resolved=8093 errors=0 current=examples/assistants/interaction_app.py
+[2026-11-22T08:15:22Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=66.1 files_done=169 resolved=8255 errors=0 current=tests/scenario_tests_async/test_view_closed.py
+[2026-11-22T08:15:56Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=66.7 files_done=170 resolved=8310 errors=0 current=examples/async_app.py
+[2026-11-22T08:16:33Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=67.3 files_done=175 resolved=8380 errors=0 current=examples/fastapi/app.py
+[2026-11-22T08:17:27Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=68.2 files_done=178 resolved=8468 errors=0 current=examples/workflow_steps/steps_from_apps.py
+[2026-11-22T08:18:13Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=68.9 files_done=183 resolved=8563 errors=0 current=tests/scenario_tests/test_workflow_steps_decorator_simple.py
+[2026-11-22T08:18:48Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=69.5 files_done=186 resolved=8640 errors=0 current=tests/scenario_tests/test_message.py
+[2026-11-22T08:19:46Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=70.5 files_done=187 resolved=8733 errors=0 current=tests/scenario_tests/test_message_deleted.py
+[2026-11-22T08:20:18Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=71.0 files_done=192 resolved=8853 errors=0 current=tests/slack_bolt/context/test_respond.py
+[2026-11-22T08:21:08Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=71.9 files_done=197 resolved=8954 errors=0 current=tests/slack_bolt/workflows/step/test_step.py
+[2026-11-22T08:21:50Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=72.6 files_done=199 resolved=9053 errors=0 current=examples/readme_async_app.py
+[2026-11-22T08:22:22Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=73.1 files_done=201 resolved=9112 errors=0 current=slack_bolt/kwargs_injection/async_utils.py
+[2026-11-22T08:23:01Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=73.7 files_done=208 resolved=9205 errors=0 current=tests/slack_bolt/context/test_set_suggested_prompts.py
+[2026-11-22T08:23:38Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=74.4 files_done=210 resolved=9280 errors=0 current=examples/docker/flask-uwsgi/main.py
+[2026-11-22T08:24:11Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=74.9 files_done=213 resolved=9385 errors=0 current=slack_bolt/workflows/step/step_middleware.py
+[2026-11-22T08:24:54Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=75.6 files_done=215 resolved=9460 errors=0 current=tests/adapter_tests_async/socket_mode/test_async_aiohttp.py
+[2026-11-22T08:25:37Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=76.3 files_done=218 resolved=9529 errors=0 current=tests/slack_bolt/logger/test_unmatched_suggestions.py
+[2026-11-22T08:26:09Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=76.9 files_done=221 resolved=9578 errors=0 current=slack_bolt/authorization/authorize_result.py
+[2026-11-22T08:26:42Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=77.4 files_done=224 resolved=9644 errors=0 current=slack_bolt/middleware/async_middleware_error_handler.py
+[2026-11-22T08:27:13Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=77.9 files_done=230 resolved=9699 errors=0 current=slack_bolt/adapter/starlette/handler.py
+[2026-11-22T08:28:41Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=79.4 files_done=234 resolved=9845 errors=0 current=tests/scenario_tests/test_app_custom_authorize.py
+[2026-11-22T08:29:13Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=79.9 files_done=237 resolved=9896 errors=0 current=slack_bolt/middleware/custom_middleware.py
+[2026-11-22T08:29:57Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=80.7 files_done=243 resolved=9979 errors=0 current=tests/adapter_tests/socket_mode/test_interactions_builtin.py
+[2026-11-22T08:30:56Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=81.7 files_done=248 resolved=10107 errors=0 current=tests/scenario_tests_async/test_message_deleted.py
+[2026-11-22T08:31:44Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=82.5 files_done=251 resolved=10198 errors=0 current=examples/asgi/async_oauth_app.py
+[2026-11-22T08:32:17Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=83.0 files_done=254 resolved=10266 errors=0 current=examples/bottle/app.py
+[2026-11-22T08:32:51Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=83.6 files_done=259 resolved=10332 errors=0 current=tests/slack_bolt/request/test_request.py
+[2026-11-22T08:33:21Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=84.1 files_done=264 resolved=10390 errors=0 current=tests/adapter_tests/socket_mode/test_lazy_listeners.py
+[2026-11-22T08:33:57Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=84.7 files_done=267 resolved=10452 errors=0 current=examples/aws_lambda/lazy_aws_lambda.py
+[2026-11-22T08:34:28Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=85.2 files_done=273 resolved=10509 errors=0 current=slack_bolt/adapter/tornado/async_handler.py
+[2026-11-22T08:35:04Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=85.8 files_done=279 resolved=10577 errors=0 current=slack_bolt/context/say/say.py
+[2026-11-22T08:35:52Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=86.6 files_done=281 resolved=10662 errors=0 current=tests/scenario_tests_async/test_message_file_share.py
+[2026-11-22T08:36:25Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=87.1 files_done=284 resolved=10751 errors=0 current=tests/slack_bolt_async/context/test_async_say.py
+[2026-11-22T08:37:01Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=87.7 files_done=290 resolved=10826 errors=0 current=examples/socket_mode_async_healthcheck.py
+[2026-11-22T08:38:12Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=88.9 files_done=293 resolved=10947 errors=0 current=slack_bolt/adapter/pyramid/handler.py
+[2026-11-22T08:38:45Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=89.5 files_done=297 resolved=11006 errors=0 current=examples/pyramid/oauth_app.py
+[2026-11-22T08:39:16Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=90.0 files_done=302 resolved=11059 errors=0 current=tests/scenario_tests_async/test_events_request_verification.py
+[2026-11-22T08:39:51Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=90.6 files_done=309 resolved=11129 errors=0 current=examples/oauth_sqlite3_app_bot_only.py
+[2026-11-22T08:40:27Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=91.2 files_done=313 resolved=11187 errors=0 current=tests/scenario_tests/test_message_file_share.py
+[2026-11-22T08:41:04Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=91.8 files_done=318 resolved=11278 errors=0 current=slack_bolt/adapter/asgi/http_response.py
+[2026-11-22T08:41:45Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=92.5 files_done=321 resolved=11366 errors=0 current=examples/django/simple_app/urls.py
+[2026-11-22T08:42:16Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=93.0 files_done=325 resolved=11427 errors=0 current=examples/starlette/oauth_app.py
+[2026-11-22T08:42:50Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=93.6 files_done=330 resolved=11481 errors=0 current=examples/flask/oauth_app.py
+[2026-11-22T08:43:23Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=94.1 files_done=336 resolved=11539 errors=0 current=slack_bolt/context/async_context.py
+[2026-11-22T08:43:59Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=94.7 files_done=342 resolved=11614 errors=0 current=slack_bolt/adapter/socket_mode/aiohttp/__init__.py
+[2026-11-22T08:44:29Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=95.2 files_done=347 resolved=11674 errors=0 current=tests/slack_bolt/context/test_set_status.py
+[2026-11-22T08:45:00Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=95.7 files_done=357 resolved=11741 errors=0 current=tests/slack_bolt_async/listener/test_async_listener_completion_handler.py
+[2026-11-22T08:45:31Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=96.2 files_done=365 resolved=11797 errors=0 current=tests/mock_web_api_server/mock_server_thread.py
+[2026-11-22T08:46:07Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=96.8 files_done=372 resolved=11886 errors=0 current=slack_bolt/workflows/step/utilities/async_fail.py
+[2026-11-22T08:46:43Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=97.4 files_done=381 resolved=11956 errors=0 current=examples/oauth_sqlite3_app.py
+[2026-11-22T08:47:17Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=98.0 files_done=394 resolved=12032 errors=0 current=slack_bolt/context/respond/internals.py
+[2026-11-22T08:47:47Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=98.5 files_done=410 resolved=12119 errors=0 current=slack_bolt/oauth/callback_options.py
+[2026-11-22T08:48:17Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=99.0 files_done=420 resolved=12176 errors=0 current=slack_bolt/listener/async_builtins.py
+[2026-11-22T08:48:46Z] [iter=1] Target type resolved target_type=call_site resolved=12249 errors=0 secs=5926 mem_mb=934 MB
+[2026-11-22T08:48:46Z] [iter=1] Resolving target type target_type=import_statement count=3227
+[2026-11-22T08:48:47Z] [iter=1] HEARTBEAT target_type=import_statement elapsed_min=99.5 files_done=53 resolved=379 errors=0 current=tests/scenario_tests/test_events_set_status.py
+[2026-11-22T08:48:54Z] [iter=1] Target type resolved target_type=import_statement resolved=2507 errors=0 secs=9 mem_mb=934 MB
+[2026-11-22T08:48:54Z] [iter=1] Resolving target type target_type=extends_clause count=167
+[2026-11-22T08:48:57Z] [iter=1] Target type resolved target_type=extends_clause resolved=124 errors=0 secs=2 mem_mb=934 MB
+[2026-11-22T09:42:02Z] [iter=1] Step 5: Writing final enrichment file triples=236464
+[2026-11-22T09:42:04Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/c64d69d2b64801602c849aa56e0ba2d4161e1f98.nq.gz size_kb=6267
+[2026-11-22T09:42:04Z] [iter=1] PHASE END: enrich elapsed_s=9168 elapsed_min=152.8 total_triples=236464

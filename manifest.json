@@ -1394,6 +1394,32 @@
       ],
       "ast": [
         "aggregate/ast/c64d69d2b64801602c849aa56e0ba2d4161e1f98/chunk-001.nq.gz"
+      ],
+      "lsp": "aggregate/lsp/c64d69d2b64801602c849aa56e0ba2d4161e1f98.nq.gz",
+      "dependencies": [
+        {
+          "packageName": "slack-sdk",
+          "ecosystem": "PYPI",
+          "version": "3.38.0",
+          "githubOrg": "slackapi",
+          "githubRepo": "python-slack-sdk",
+          "githubCommit": "ae366555d6d430befd11dd2f0bf76707879635aa",
+          "githubTag": "v3.38.0",
+          "githubUrl": "https://github.com/slackapi/python-slack-sdk",
+          "source": "build_file:pyproject.toml"
+        },
+        {
+          "packageName": "aiohttp",
+          "ecosystem": "PYPI",
+          "version": "3.14.5",
+          "githubOrg": "aio-libs",
+          "githubRepo": "aiohttp",
+          "githubCommit": "f17c631bddcfd4ec712342db28f1d3381a3fec71",
+          "githubTag": "v3.14.5",
+          "githubUrl": "https://github.com/aio-libs/aiohttp",
+          "source": "lsp",
+          "install_path": "/home/runner/.local/share/uv/tools/repolex/lib/python3.13/site-packages/aiohttp/web_routedef.py"
+        }
       ]
     }
   ],
